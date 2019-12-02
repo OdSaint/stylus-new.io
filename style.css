@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600|Roboto&display=swap&subset=cyrillic');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Raleway, Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+}
+
+header {
+    position: relative;    
+    height: 100vh;
+    background: url(images/videol_loop.jpg) center/cover no-repeat;
+}
+
+.header__overley {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
+
+    background-color: rgba(31, 49, 53, .7);
+}
+
+.header__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.header__stylus {
+    padding: 21px 108px;
+    border: 3px solid #ffffff;
+    
+}
+
+.header__title {
+    font-size: 52px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header__subtitle {
+    font-family: Roboto;
+    font-size: 27px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 12.96px;
+
+    margin-right: -0.48em;
+    margin-top: 0;
+}
+
+.header__text{
+    max-width: 327px;
+    font-family: Georgia;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 26px;
+    margin:35px auto 0;
+}
+
+.header__button {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    background: none;
+    border:0;
+    
+    cursor: pointer;
+}
+
+.navigation {
+    padding: 27px 0 0;
+}
+
+.nav__content {
+    position: relative;
+    max-width: 970px;
+    max-height: 25px;
+    margin: 0 auto;
+}
+
+.nav__logo {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -1.92px;
+}
+
+.nav__logo a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.nav__burger {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+
+@media (max-width:980px) {
+    .nav__content {
+        margin: 0 20px;
+    }
+}
+
+.main__container {
+    padding-top: 125px;
+}
+
+.main__content {
+    display: flex;
+    max-width: 970px;
+    margin: auto;
+}
+
+.main__text--left {
+    color: #333333;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 52px;
+    text-transform: uppercase;
+    letter-spacing: .54px;
+    word-break: break-all;
+    margin-right: 112px;
+}
+
+.main__text--left::before {
+    display: inline-block;
+    content: "";
+    width: 300px;
+    height: 2px;
+    background: #000;
+    vertical-align: middle;
+}
+
+.main_text--right {
+    font-family: Georgia;
+    color: #333333;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 24px;
+    
+}
+
+@media (max-width:945px) {
+    .main__text--left {
+        font-size: 20px;
+    }
+    .main_text--right {
+        font-size: 17px;
+    }
+}
+
+@media (max-width:855px) {
+    .main__content {
+        display: block;
+        text-align: center;
+    }
+    .main__text--left {
+        font-size: 28px;
+        margin-right: 0;
+        padding: 0 10px;
+    }
+    .main_text--right {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+}
+
+.main__bg {
+    max-width: 970px;
+    display: block;
+    margin:60px auto 0;
+    
+}
+.main__bg img {
+    width: 100%;
+}
+
+.biography__author {
+    background-color: #1f3135;
+    color: #fff;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.biography__title {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    padding: 68px 0;
+}
+
+.biography__title::before {
+    display: inline-block;
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #fff;
+    vertical-align: middle;
+
+    margin-right: 50px;
+}
+
+.biography__title::after {
+    display: inline-block;
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #fff;
+    vertical-align: middle;
+
+    margin-left: 50px;
+}
+
+.biography__description {
+    max-width: 626px;
+    margin: 0 auto;
+    font-family: Georgia;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 26px;
+    padding-bottom: 94px;
+}
+
+.footer__part {
+    position: relative;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 58px;
+}
+
+.author__avatar {
+    position: absolute;
+    top:0;
+    transform: translate(-50%, -50%);
+    border: 3px solid #ffffff;
+    background-color: #202020;
+    border-radius: 50%;
+}
+
+.author__text {
+    font-family: Georgia;
+    colol: #333;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 26px;
+}
+
+.who__author {
+    display: block;
+    opacity: 0.5;
+    color: #333;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+
+    margin-top: 15px;
+}
